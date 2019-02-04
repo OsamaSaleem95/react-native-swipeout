@@ -114,10 +114,11 @@ var NativeButton = (0, _createReactClass2.default)({
 
     // Render default button
     return _react2.default.createElement(
-      _reactNative.TouchableHighlight,
+      _reactNative.TouchableOpacity,
       _extends({}, buttonProps, {
         style: [styles.button, this.props.style, disabledStyle],
-        underlayColor: this.props.underlayColor }),
+        underlayColor: this.props.underlayColor ,
+      activeOpacity:1}),
       this._renderText()
     );
   }
